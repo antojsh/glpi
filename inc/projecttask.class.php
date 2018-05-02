@@ -555,6 +555,7 @@ class ProjectTask extends CommonDBChild {
       echo "<td>";
       Html::showDateTimeField("plan_start_date",
                               ['value' => $this->fields['plan_start_date'],
+				'required' => true,
                                'rand'  => $rand_plan_start_date]);
       echo "</td>";
       echo "<td>".__('Real start date')."</td>";
@@ -568,6 +569,7 @@ class ProjectTask extends CommonDBChild {
       echo "<td>".__('Planned end date')."</td>";
       echo "<td>";
       Html::showDateTimeField("plan_end_date", ['value' => $this->fields['plan_end_date'],
+						'required' => true,
                                                 'rand'  => $rand_plan_end_date]);
       echo "</td>";
       echo "<td>".__('Real end date')."</td>";
